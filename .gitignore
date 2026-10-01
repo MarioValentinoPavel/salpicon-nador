@@ -1,0 +1,4 @@
+assets/**/_*.txt
+assets/_unused/
+assets/web/*.html
+*.tmp

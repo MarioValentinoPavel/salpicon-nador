@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salpicon · Gastronomie méditerranéenne à Nador</title>
+<meta name="description" content="Salpicon, restaurant méditerranéen sur le boulevard Grand Rif à Nador : poissons, fruits de mer, paella, viandes et cocktails sans alcool, avec musique live. Tous les jours de 12 h à 1 h 30. +212 536 383 795.">
+<meta name="theme-color" content="#0a262d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23103c46'/%3E%3Cpath d='M8 22h48M8 32h48M8 42h48' stroke='%23e8b4aa' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300..700&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="intro" id="intro" aria-hidden="true">
+  <p class="intro__name">Salpicon</p>
+  <svg class="intro__strings" viewBox="0 0 1000 200" preserveAspectRatio="none">
+    <path class="istr" d="M0 100 L1000 100"/><path class="istr" d="M0 100 L1000 100"/><path class="istr" d="M0 100 L1000 100"/>
+    <path class="istr" d="M0 100 L1000 100"/><path class="istr" d="M0 100 L1000 100"/><path class="istr" d="M0 100 L1000 100"/>
+  </svg>
+</div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top">Salpicon</a>
+  <nav class="nav__links" aria-label="Principal">
+    <a href="#carte" data-i18n="nav.menu">La carte</a>
+    <a href="#salle" data-i18n="nav.room">La salle</a>
+    <a href="#avis" data-i18n="nav.reviews">Avis</a>
+    <a href="#venir" data-i18n="nav.visit">Venir</a>
+  </nav>
+  <div class="nav__end">
+    <button class="sound" id="sound" type="button" aria-pressed="false"><i class="ph-light ph-speaker-slash"></i><span data-i18n="sound.off">Son coupé</span></button>
+    <div class="lang" role="group" aria-label="Langue">
+      <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero__copy">
+      <h1 class="hero__title"><span class="hero__word">Salpicon</span></h1>
+      <p class="hero__sub" data-i18n="hero.sub">Cuisine méditerranéenne, produits de la mer et guitare live, sur le boulevard Grand Rif.</p>
+      <div class="hero__cta">
+        <a class="btn btn--blush" href="#carte" data-i18n="cta.menu">Jouer la carte</a>
+        <a class="btn btn--line" href="tel:+212536383795" data-i18n="cta.book">Réserver</a>
+      </div>
+      <p class="hero__hours" data-i18n="hero.hours">Tous les jours, de 12 h à 1 h 30</p>
+    </div>
+    <figure class="hero__fig">
+      <img src="assets/img/salle-rose.jpg" alt="Salle du Salpicon : fauteuils en velours rose, tables en marbre et set de table bleu pétrole" width="1200" height="1600">
+    </figure>
+    <svg class="hero__string pluckable" data-note="0" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L1000 20"/></svg>
+  </section>
+
+  <section class="setlist" id="carte">
+    <div class="setlist__head">
+      <h2 class="h2" data-i18n="menu.title">La carte en six cordes</h2>
+      <p class="lead" data-i18n="menu.lead">Passez sur les cordes pour les faire vibrer, touchez-en une pour ouvrir le chapitre. Activez le son si le cœur vous en dit.</p>
+    </div>
+    <ol class="strings" id="strings">
+      <li class="row" data-note="0">
+        <button class="row__btn" type="button" aria-expanded="false"><span class="row__lbl" data-i18n="c1">Entrées</span><span class="row__n" data-i18n="c1.n">3 plats</span></button>
+        <svg class="row__string pluckable" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L1000 20"/></svg>
+        <div class="row__panel"><div class="dishes">
+          <figure class="dish"><img src="assets/img/croquetas.jpg" alt="Croquettes et rouleaux croustillants" loading="lazy" width="1200" height="1600"><figcaption><b data-i18n="d.croq">Croquettes de crevettes</b><span data-i18n="d.croq.t">Celles qu’on recommande une seconde fois.</span></figcaption></figure>
+          <figure class="dish"><img src="assets/img/tapas.jpg" alt="Table de tapas vue du dessus : calamars, crevettes, poulpe" loading="lazy" width="1200" height="1600"><figcaption><b data-i18n="d.tapas">Tapas à partager</b><span data-i18n="d.tapas.t">Calamars, crevettes, poulpe : on commande pour la table.</span></figcaption></figure>
+          <figure class="dish"><img src="assets/img/ensalada.jpg" alt="Salade composée dans une assiette en grès" loading="lazy" width="1200" height="1600"><figcaption><b data-i18n="d.salad">Salades</b><span data-i18n="d.salad.t">Fraîches, dressées avec soin, dont la salade de fruits de mer.</span></figcaption></figure>
+        </div></div>
+      </li>
+      <li class="row" data-note="1">
+        <button class="row__btn" type="button" aria-expanded="false"><span class="row__lbl" data-i18n="c2">La mer</span><span class="row__n" data-i18n="c2.n">4 plats</span></button>
+        <svg class="row__string pluckable" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L1000 20"/></svg>
+        <div class="row__panel"><div class="dishes">
+          <figure class="dish"><img src="assets/img/parrillada.jpg" alt="Parrillada de poissons et fruits de mer" loading="lazy" width="1600" height="900"><figcaption><b data-i18n="d.parr">Parrillada de la mer</b><span data-i18n="d.parr.t">Poissons, crevettes et calamars grillés, servis sur planche.</span></figcaption></figure>
+          <figure class="dish"><img src="assets/img/gambas.jpg" alt="Assiette de crevettes disposées en couronne" loading="lazy" width="1200" height="1600"><figcaption><b data-i18n="d.gambas">Crevettes</b><span data-i18n="d.gambas.t">En couronne, avec un quartier de citron.</span></figcaption></figure>
+          <figure class="dish"><img src="assets/img/mejillones.jpg" alt="Moules en sauce" loading="lazy" width="1600" height="1200"><figcaption><b data-i18n="d.mej">Moules</b><span data-i18n="d.mej.t">En sauce, avec du citron.</span></figcaption></figure>
+          <figure class="dish"><img src="assets/img/almejas.jpg" alt="Palourdes au citron" loading="lazy" width="1600" height="1200"><figcaption><b data-i18n="d.alm">Palourdes</b><span data-i18n="d.alm.t">Au citron, tout simplement.</span></figcaption></figure>
+        </div></div>
+      </li>
+      <li class="row" data-note="2">
+        <button class="row__btn" type="button" aria-expanded="false"><span class="row__lbl" data-i18n="c3">Riz et pâtes</span><span class="row__n" data-i18n="c3.n">2 plats</span></button>
+        <svg class="row__string pluckable" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L1000 20"/></svg>
+        <div class="row__panel"><div class="dishes">
+          <figure class="dish"><img src="assets/img/paella.jpg" alt="Paella aux fruits de mer et crevettes" loading="lazy" width="1200" height="1600"><figcaption><b data-i18n="d.paella">Paella aux fruits de mer</b><span data-i18n="d.paella.t">Le plat que l’on vient partager en famille.</span></figcaption></figure>
+          <figure class="dish"><img src="assets/img/raviolis.jpg" alt="Pâtes farcies et crevettes en sauce" loading="lazy" width="518" height="640"><figcaption><b data-i18n="d.pasta">Pâtes aux fruits de mer</b><span data-i18n="d.pasta.t">Crevettes, sauce et un trait au pinceau.</span></figcaption></figure>
+        </div></div>
+      </li>
+      <li class="row" data-note="3">
+        <button class="row__btn" type="button" aria-expanded="false"><span class="row__lbl" data-i18n="c4">Viandes</span><span class="row__n" data-i18n="c4.n">2 plats</span></button>
+        <svg class="row__string pluckable" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L1000 20"/></svg>
+        <div class="row__panel"><div class="dishes">
+          <figure class="dish"><img src="assets/img/solomillo-oro.jpg" alt="Filet de bœuf recouvert d’une feuille d’or" loading="lazy" width="1600" height="1205"><figcaption><b data-i18n="d.gold">Filet à la feuille d’or</b><span data-i18n="d.gold.t">La pièce spectaculaire de la maison.</span></figcaption></figure>
+          <figure class="dish"><img src="assets/img/carpaccio.jpg" alt="Fines tranches de bœuf, câpres et roquette" loading="lazy" width="480" height="640"><figcaption><b data-i18n="d.carp">Carpaccio de bœuf</b><span data-i18n="d.carp.t">Tranché fin, avec des câpres.</span></figcaption></figure>
+        </div></div>
+      </li>
+      <li class="row" data-note="4">
+        <button class="row__btn" type="button" aria-expanded="false"><span class="row__lbl" data-i18n="c5">Douceurs et cafés</span><span class="row__n" data-i18n="c5.n">Pour finir</span></button>
+        <svg class="row__string pluckable" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L1000 20"/></svg>
+        <div class="row__panel"><div class="dishes">
+          <figure class="dish"><img src="assets/img/postre.jpg" alt="Part de gâteau maison sur une assiette mouchetée" loading="lazy" width="480" height="848"><figcaption><b data-i18n="d.dessert">Desserts maison</b><span data-i18n="d.dessert.t">« Très bons et très bien faits », disent les clients. Et une belle sélection de cafés.</span></figcaption></figure>
+        </div></div>
+      </li>
+      <li class="row" data-note="5">
+        <button class="row__btn" type="button" aria-expanded="false"><span class="row__lbl" data-i18n="c6">Sans alcool</span><span class="row__n" data-i18n="c6.n">Cocktails</span></button>
+        <svg class="row__string pluckable" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20 L1000 20"/></svg>
+        <div class="row__panel"><div class="dishes">
+          <figure class="dish"><img src="assets/img/mocktails.jpg" alt="Trois cocktails colorés levés au comptoir" loading="lazy" width="360" height="640"><figcaption><b data-i18n="d.mock">Cocktails sans alcool</b><span data-i18n="d.mock.t">Colorés, frais, servis au bar. Salpicon ne sert pas d’alcool.</span></figcaption></figure>
+        </div></div>
+      </li>
+    </ol>
+    <p class="setlist__note" data-i18n="menu.note">Une sélection de la carte. Plats et arrivages du jour à demander en salle.</p>
+  </section>
+
+  <section class="room" id="salle">
+    <figure class="room__big"><img src="assets/img/salle-baie.jpg" alt="Salle lumineuse avec baies vitrées, tables et chaises en rotin" loading="lazy" width="1600" height="1066"></figure>
+    <div class="room__txt">
+      <h2 class="h2" data-i18n="room.title">Bleu pétrole, velours rose, marbre blanc.</h2>
+      <blockquote>
+        <p data-i18n="room.q">« L’ambiance est spectaculaire, tout est soigné dans le moindre détail. La décoration est magnifique. »</p>
+        <cite>Jadish Quince, Google</cite>
+      </blockquote>
+    </div>
+    <figure class="room__a"><img src="assets/img/salle-1.jpg" alt="Banquettes bleu pétrole et tables en marbre" loading="lazy" width="1066" height="1600"></figure>
+    <figure class="room__b"><img src="assets/img/aceite.jpg" alt="Huile versée sur un plat, en salle" loading="lazy" width="900" height="1600"></figure>
+  </section>
+
+  <section class="live" aria-labelledby="liveTitle">
+    <h2 class="live__title" id="liveTitle" data-i18n="live.title">Le soir, une guitare.</h2>
+    <p class="live__txt" data-i18n="live.txt">« La musique live anime la soirée. Les serveurs sont très attentionnés. »</p>
+    <p class="live__who">Helena Roldán, Google</p>
+  </section>
+
+  <section class="reviews" id="avis">
+    <div class="reviews__head">
+      <h2 class="h2" data-i18n="rev.title">À table, ils ont dit</h2>
+      <p class="reviews__score"><b>4,3</b> <span data-i18n="rev.score">sur Google · 569 avis</span></p>
+    </div>
+    <ul class="reviews__list" id="revList"></ul>
+    <p class="reviews__note" data-i18n="rev.note">Avis Google, certains traduits de l’espagnol.</p>
+  </section>
+
+  <section class="visit" id="venir">
+    <figure class="visit__fig"><img src="assets/img/facade.jpg" alt="Façade du Salpicon de nuit, enseigne éclairée" loading="lazy" width="1600" height="1066"></figure>
+    <div class="visit__txt">
+      <h2 class="h2" data-i18n="visit.title">Boulevard Grand Rif, Nador</h2>
+      <dl>
+        <div><dt data-i18n="visit.hours">Horaires</dt><dd data-i18n="visit.hours.v">Tous les jours, de 12 h à 1 h 30</dd></div>
+        <div><dt data-i18n="visit.book">Réservations</dt><dd><a href="tel:+212536383795">+212 536 383 795</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/restaurant.salpicon/" target="_blank" rel="noopener">@restaurant.salpicon</a></dd></div>
+      </dl>
+      <div class="visit__cta">
+        <a class="btn btn--blush" href="tel:+212536383795" data-i18n="cta.call">Appeler</a>
+        <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&query=Salpicon+Restaurant+Nador" target="_blank" rel="noopener" data-i18n="cta.route">Itinéraire</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__name">Salpicon</p>
+  <p data-i18n="foot.line">Gastronomie méditerranéenne · Nador</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
